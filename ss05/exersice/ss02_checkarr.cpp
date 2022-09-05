@@ -3,7 +3,7 @@ using namespace std;
 void inputArr(int arr[], int &n){
 	cout << "Enter the array length: " ;
 	cin >> n;
-	for(int i = 0; i < n-1; i++){
+	for(int i = 0; i < n; i++){
 		cout << "array[" << i<< "]= ";
 		cin >> arr[i];
 	} 
@@ -15,22 +15,21 @@ void findMaxLenght(int arr[], int n)
     int start = 0;
     int end = 0;
 
-    for (int i = 0; i < n - 1; i++)
+    for (int i = 0; i < n ; i++)
     {
         if (arr[i] < arr[i + 1])
         {
-            Length++; 							/*neu dung thi tang do dai*/
-            if (Length > max){					/*gan do max cho gioi han moi*/
+            Length++; 							
+            if (Length > max){					
                 max = Length;
-                start = i + 2 - Length; 		/*dam bao cac chi so ban dau chinh xac */
-                end = i + 2;
+                start = i + 2 - Length; 		//0
+                end = i + 2;					//0
             }
 
         }else{
             Length = 1; 
-		}						/* Neu khong thi bat dau lai chieu dai va xet la tu dau*/
-    }
-   								/* do khi length < max thi end va start khong thay doi nen ta se duoc yeu cau bai toan */
+		}						
+    } 								
    	cout << "So phan tu cua doan tang dai nhat là: " << max << endl;
     for (int i = start; i < end; i++)
         cout << arr[i] << " ";
