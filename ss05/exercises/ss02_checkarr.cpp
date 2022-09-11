@@ -8,17 +8,13 @@ void inputArr(int arr[], int &n){
 		cin >> arr[i];
 	} 
 }
-void findMaxLenght(int arr[], int n)
-{
+void findMaxLenght(int arr[], int n){
     int Length = 1;
     int max = 1;
     int start = 0;
     int end = 0;
-
-    for (int i = 0; i < n ; i++)
-    {
-        if (arr[i] < arr[i + 1])
-        {
+    for (int i = 0; i < n ; i++){
+        if (arr[i] < arr[i + 1]){
             Length++; 							
             if (Length > max){					
                 max = Length;
