@@ -38,6 +38,11 @@ char xepLoai(float x) {
 }
 
 void xuatSinhVien(sinhVien A[], int n) {
+//	if(n==0){
+//		cout << "Chua nhap thong tin sinh vien!!!";
+//		cout << "Vui long nhap thong tin sinh vien truoc khi in!!!";
+//		nhapSinhVien(A,n);
+//	}
 	cout << "\nThong tin sinh vien: " << endl;
 	for(int i = 0; i < n; i++) {
 		A[i].tk = (0.1 * A[i].cc) + (0.3 * A[i].gk) + (0.6 * A[i].ck);
@@ -130,7 +135,7 @@ void sapXep(sinhVien A[], int n) {
 }
 
 main() {
-	sinhVien A[100];
+	sinhVien A[200];
 	int n,x;
 	char select;
 	while(true) {
@@ -148,9 +153,15 @@ main() {
 		if(select == '1') 
 			nhapSinhVien(A,n);
 		if(select == '2')
+			if(n=0){
+			cout << "Chua nhap thong tin sinh vien!!!";
+			cout << "Vui long nhap thong tin sinh vien truoc khi in!!!";
+			nhapSinhVien(A,n);
+			}else
 			xuatSinhVien(A,n);
 		if(select == '3')
 			sapXep(A,n);
+			xuatSinhVien(A,n);
 		if(select == '4')
 			reset(A,n);
 		if(select == '5')
