@@ -55,3 +55,4 @@ main(){
 	nhapSV(A, n);
 	xuatThongTin(A, n);
 }
+// Not the tutor's
