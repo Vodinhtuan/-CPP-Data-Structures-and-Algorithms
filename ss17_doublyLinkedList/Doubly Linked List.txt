@@ -1,0 +1,28 @@
+Cho 1 danh sách sinh viên bao gồm:
+mã sinh viên (int)
+họ và tên (char 50)
+điểm chuyên cần (float [0, 10])
+điểm giữa kỳ (float [0, 10])
+điểm cuối kỳ (float [0, 10])
+
+Yêu cầu hãy tạo 1 danh sách liên kết đôi để thực hiện menu sau:
+1. Thêm 1 sinh viên vào đầu danh sách
+2. Thêm 1 sinh viên vào cuối danh sách
+3. Xóa 1 sinh viên ở đầu danh sách
+4. Xóa 1 sinh viên ở cuối danh sách
+5. Đếm xem trong danh sách có bao nhiêu sinh viên
+6. Nhập vào 1 mã sinh viên, hãy tìm sinh viên đó
+7. In ra danh sách sinh viên từ đầu đến cuối
+8. In ra danh sách sinh viên từ cuối về đầu
+9. Thoát
+
+Thông tin in ra bao gồm:
+MSV - Họ và Tên - Tổng Kết - Xếp Loại
+
+Tổng kết = 10% CC + 30% GK + 60% CK
+Xếp Loại
+	A: [8.5, 10]
+	B: [7.0, 8.5)
+	C: [5.5, 7.0)
+	D: [4.0, 5.5)
+	F: Còn lại

@@ -13,6 +13,20 @@ void insert_first(int x, List &F) {
 	F = p;
 }
 
+void first_delete(List &F){
+	List p =F;
+	F= p->Next;
+	delete (p);
+}
+void last_delete(List &F){
+	List x = F, y;
+	while (x->Next){
+		y = x;
+		x = x->Next;
+	}
+	y->Next = NULL;
+	delete(x);
+}
 void insert_last(int x, List &F) {
 	List p = new(Node);
 	p->Data = x;
@@ -52,6 +66,8 @@ void input(List &F) {
 main() {
 	List First;
 	input(First);
+	print(First);
+	last_delete(First);
 	print(First);
 }
 
