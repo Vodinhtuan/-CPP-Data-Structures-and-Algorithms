@@ -102,7 +102,7 @@ void delete_first(List &SV) {
 	delete p;
 }
 
-void delete_x(List &SV) {
+void delete_x(List &SV) {		// xoa theo ten 
 	List p = SV;
 	char x[50];
 	while(p -> Next) {
@@ -171,7 +171,7 @@ int spaceLast(char x[]) {
 	}
 }
 
-void sapXep(List SV) {
+void sapXep(List SV) { 		// sap xep theo ten 
 	List p = SV;
 	for(List i = p; i != NULL; i = i -> Next) {
 		for(List j = i -> Next ; j != NULL; j = j -> Next) {

@@ -22,7 +22,7 @@ void them(int x, Tree &t) {
 	}
 }
 
-void duyet_NLR(Tree t) {
+void duyet_NLR(Tree t) {    // Tien tu
 	if(t != NULL) {
 		cout << t -> Data << " ";
 		duyet_NLR(t -> Left);
@@ -30,7 +30,7 @@ void duyet_NLR(Tree t) {
 	}
 }
 
-void duyet_NRL(Tree t) {
+void duyet_NRL(Tree t) {	//	
 	if(t != NULL) {
 		cout << t -> Data << " ";
 		duyet_NRL(t -> Right);
@@ -38,7 +38,7 @@ void duyet_NRL(Tree t) {
 	}
 }
 
-void duyet_LNR(Tree t) {
+void duyet_LNR(Tree t) {	// Trung tu
 	if(t != NULL) {
 		duyet_LNR(t -> Left);
 		cout << t -> Data << " ";
@@ -62,7 +62,7 @@ void duyet_RLN(Tree t) {
 	}
 }
 
-void duyet_LRN(Tree t) {
+void duyet_LRN(Tree t) {  	// Hau tu
 	if(t != NULL) {
 		duyet_LRN(t -> Left);
 		duyet_LRN(t -> Right);
